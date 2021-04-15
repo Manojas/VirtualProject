@@ -8,20 +8,18 @@
 <meta charset="ISO-8859-1">
 <title>Viewstudent</title>
 <style type="text/css" media="all">
-.table
-{
-border:3px solid black;
+.table {
+	border: 3px solid black;
+	margin-left: auto;
+	margin-right: auto;
+}
 
-margin-left:auto;
-margin-right:auto;
+.th {
+	padding: 0px 50px 0px 50px;
 }
-.th
-{
-padding:0px 50px 0px 50px;
-}
+
 .show {
-	
-	float:right;
+	float: right;
 }
 
 .btn-primary {
@@ -94,10 +92,9 @@ body {
 			</p>
 		</form>
 		<a href="ViewStudent">veiw Students</a> <a href="AddStudent">Add
-			Student</a> <a href="DeleteStudent">Delete Student</a>
-			  <a href="ViewStaff">veiw Staff</a>
-  <a href="AddStaff.jsp">Add Staff</a>
-  <a href="DeleteStaff.jsp">Delete Staff</a>
+			Student</a> <a href="DeleteStudent">Delete Student</a> <a
+			href="ViewStaff">veiw Staff</a> <a href="AddStaff.jsp">Add Staff</a>
+		<a href="DeleteStaff.jsp">Delete Staff</a>
 		<form action="index.html">
 			<p align="center">
 				<button type="submit" class="btn btn-default btn-sm">
@@ -118,13 +115,19 @@ body {
 
 	</div>
 	<div class="show">
-	
-	<table class="table">
-	
-	<tr >
-	<th >Student UserName</th><th >Student Name</th><th>Student Age</th><th>Student Address</th><th>Student City</th><th>Student Email</th></tr>
-		
-		<%
+
+		<table class="table">
+
+			<tr>
+				<th>Student UserName</th>
+				<th>Student Name</th>
+				<th>Student Age</th>
+				<th>Student Address</th>
+				<th>Student City</th>
+				<th>Student Email</th>
+			</tr>
+
+			<%
 			Student[] st = (Student[]) request.getAttribute("result");
 			for (int i = 0; i < st.length; i++) {
 				
@@ -134,11 +137,16 @@ body {
 				
 			
 		%>
-		<tr><td><%=student.getStudentUserName() %></td><td><%=student.getStudentName() %></td><td><%=student.getAge() %></td><td><%=student.getAddress() %></td>
-		<td><%=student.getCity() %></td><td><%=student.getStudentMail() %></td>
-		       </tr>
-		<%} %>
-		<%} %>
+			<tr>
+				<td><%=student.getStudentUserName() %></td>
+				<td><%=student.getStudentName() %></td>
+				<td><%=student.getAge() %></td>
+				<td><%=student.getAddress() %></td>
+				<td><%=student.getCity() %></td>
+				<td><%=student.getStudentMail() %></td>
+			</tr>
+			<%} %>
+			<%} %>
 		</table>
 		<br>
 	</div>

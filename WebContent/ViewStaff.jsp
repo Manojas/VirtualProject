@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
-	<%@ page import="Com.Mindtree.Model.Staff"%>
+<%@ page import="Com.Mindtree.Model.Staff"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -90,13 +90,10 @@ body {
 				</button>
 			</p>
 		</form>
-		<a href="ViewStudent">veiw Student</a>
-		 <a href="AddStudent">Add
-			Student</a>
-			 <a href="DeleteStudent">Delete Student</a>
-			   <a href="ViewStaff">veiw Staff</a>
-  <a href="AddStaff.jsp">Add Staff</a>
-  <a href="DeleteStaff.jsp">Delete Staff</a>
+		<a href="ViewStudent">veiw Student</a> <a href="AddStudent">Add
+			Student</a> <a href="DeleteStudent">Delete Student</a> <a
+			href="ViewStaff">veiw Staff</a> <a href="AddStaff.jsp">Add Staff</a>
+		<a href="DeleteStaff.jsp">Delete Staff</a>
 		<form action="index.html">
 			<p align="center">
 				<button type="submit" class="btn btn-default btn-sm">
